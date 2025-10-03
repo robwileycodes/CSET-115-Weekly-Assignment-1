@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calc">
+        <div id="container">
+            <input id="display" readonly>
+        </div>
+        <div class="calc" id="keys">
+            <button onclick="displayNum('7')">7</button>
+            <button onclick="displayNum('8')">8</button>
+            <button onclick="displayNum('9')">9</button>
+            <button onclick="displayNum('/')" class="operator">/</button>
+            <button onclick="displayNum('4')">4</button>
+            <button onclick="displayNum('5')">5</button>
+            <button onclick="displayNum('6')">6</button>
+            <button onclick="displayNum('*')" class="operator">*</button>
+            <button onclick="displayNum('1')">1</button>
+            <button onclick="displayNum('2')">2</button>
+            <button onclick="displayNum('3')">3</button>
+            <button onclick="displayNum('.')" class="operator">-</button>
+            <button onclick="displayNum('.')" class="decimal">.</button>
+            <button onclick="displayNum('0')">0</button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="displayNum('+')" class="operator">+</button>
+        </div>
+        <button onclick="calculate()" id="equal">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
