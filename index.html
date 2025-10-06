@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div id="calc">
@@ -28,6 +29,10 @@
             <button onclick="displayNum('0')">0</button>
             <button onclick="clearDisplay()" class="clear">C</button>
             <button onclick="displayNum('+')" class="operator">+</button>
+            <button onclick="displayNum('&lpar;')">&lpar;</button>
+            <button onclick="displayNum('&rpar;')">&rpar;</button>
+            <button onclick="del()" class="clear"><i class="material-icons">backspace</i></button>
+            <button onclick="displayNum('%')" class="operator">%</button>
         </div>
         <button onclick="calculate()" id="equal">=</button>
     </div>
